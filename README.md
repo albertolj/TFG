@@ -8,7 +8,8 @@
 
 Primero, clona el repositorio del proyecto TFG desde GitHub:
 ``` bash
-git clone https://github.com/albertolj/TFG
+git clone https://github.com/albertolj/TFG 
+```
 
 ### Paso 2: Iniciar Odoo con Docker
 
@@ -16,6 +17,7 @@ Dirígite al directorio raiz del proyecto y ejecuta el archivo yaml:
 
 ``` bash
 docker-compose up
+```
 
 
 ### Paso 3: Acceder a Odoo
