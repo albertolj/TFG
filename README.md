@@ -22,7 +22,7 @@ docker-compose up
 
 ### Paso 3: Acceder a Odoo
 Una vez que Odoo se haya iniciado correctamente, puedes acceder a la aplicación en tu navegador con el siguiente enlace:
-[Enlace a tu localhost](http://localhost:8300/)
+[Enlace a tu localhost con puerto 8300](http://localhost:8300/)
 
 ### Paso 4: Configuración de la Base de Datos
 
@@ -50,4 +50,4 @@ En "Aplicaciones" selecciona "Actualizar lista de aplicaciones" para agregar los
 
 ### Paso 4: Instalar el módulos "Tarifas Wizard"
 
-Por último, instala el módulo "Tarifas Wizard". Dicho módulo también va a instalar todos los módulos necesarios para que funcione correctamente. Los módulos que se van a instalar se encuentran especificados en el archivo "__manifest__.py"
+Por último, instala el módulo "Tarifas Wizard". Dicho módulo también va a instalar todos los módulos necesarios para que funcione correctamente. Los módulos que se van a instalar se encuentran especificados en el archivo \"__manifest__.py"
