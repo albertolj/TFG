@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  odoo:
+    container_name: odoo_TFG
+    image: "registry.ccit.es/odoo_15_ee"
+    restart: unless-stopped
+    ports:
+      - "8300:8069"
+    depends_on:
+      - postgres
+    volumes:
+      - ./sessionsions:/var/lib/odoo/sessions
+      - ./filestore:/var/lib/odoo/filestore
+      - ./conf/odoo.conf:/etc/odoo/odoo.conf
+      - ./extra-addons:/mnt/extra-addons
+    environment:
+      - HOST=postgres
+      - USER=odoo
+      - PASSWORD=odoo
+
+  postgres:
+    container_name: postgres_TFG
+    image: postgres:alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data/pgdata
