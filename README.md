@@ -50,4 +50,4 @@ En "Aplicaciones" selecciona "Actualizar lista de aplicaciones" para agregar los
 
 ### Paso 4: Instalar el módulos "Tarifas Wizard"
 
-Por último, instala el módulo "Tarifas Wizard". Dicho módulo también va a instalar todos los módulos necesarios para que funcione correctamente. Los módulos que se van a instalar se encuentran especificados en el archivo \"__manifest__.py"
+Por último, instala el módulo "Tarifas Wizard". Dicho módulo también va a instalar todos los módulos necesarios para que funcione correctamente. Los módulos que se van a instalar se encuentran especificados en el archivo "\__manifest\__.py"
