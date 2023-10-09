@@ -2,7 +2,7 @@ version: '3'
 
 services:
   odoo:
-    container_name: odoo_TFG
+    container_name: odoo_TFG_Produccion
     image: "registry.ccit.es/odoo_15_ee"
     restart: unless-stopped
     ports:
@@ -20,7 +20,7 @@ services:
       - PASSWORD=odoo
 
   postgres:
-    container_name: postgres_TFG
+    container_name: postgres_TFG_Produccion
     image: postgres:alpine
     restart: unless-stopped
     environment:

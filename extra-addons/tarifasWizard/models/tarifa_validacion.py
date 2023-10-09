@@ -25,7 +25,7 @@ class tarifasExcepcion(models.Model):
     def action_confirm(self):
 
         for line in self.order_line:
-            if (not(self.env.user.has_group('sales_team.group_sale_manager')) or not(self.env.user.has_group('equipoDeVentas.group_supervisor'))):
+            if (not(self.env.user.has_group('sales_team.group_sale_manager')) and not(self.env.user.has_group('equipoDeVentas.group_supervisor'))):
                 tarifa = self.pricelist_id.get_product_price(line.product_id, line.product_uom_qty, self.partner_id)
                 if (line.price_unit < tarifa):
                     return{
