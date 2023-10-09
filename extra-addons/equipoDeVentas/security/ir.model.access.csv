@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_operators_sale_order,operator.sale.order,sale.model_sale_order,equipoDeVentas.group_operators,1,0,0,0
+access_operators_crm,operator.crm.lead,crm.model_crm_lead,equipoDeVentas.group_operators,1,0,0,0
+access_supervisor_sale_order,supervisor.sale.order,sale.model_sale_order,equipoDeVentas.group_supervisor,1,1,1,1
+access_supervisor_crm,supervisor.crm.lead,crm.model_crm_lead,equipoDeVentas.group_supervisor,1,1,1,1
