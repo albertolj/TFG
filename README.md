@@ -50,4 +50,8 @@ En "Aplicaciones" selecciona "Actualizar lista de aplicaciones" para agregar los
 
 ### Paso 4: Instalar el módulos "Tarifas Wizard"
 
-Por último, instala el módulo "Tarifas Wizard". Dicho módulo también va a instalar todos los módulos necesarios para que funcione correctamente. Los módulos que se van a instalar se encuentran especificados en el archivo "\__manifest\__.py"
+A continuación, instala el módulo "Tarifas Wizard". Dicho módulo también va a instalar todos los módulos necesarios para que funcione correctamente. Los módulos que se van a instalar se encuentran especificados en el archivo "\__manifest\__.py"
+
+### Paso 5: Instalar la opción de Ventas "Tarifas"
+
+Por último, dirígite en "Ajustes" a "Ventas", en el apartado de "Precio" se encuentra la opción de "Tarifas". Activa la opción, y señala el parámetro de "Reglas de precio avanzadas" y guarde los cambios.
