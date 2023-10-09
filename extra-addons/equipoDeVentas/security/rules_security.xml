@@ -24,6 +24,17 @@
             <field name="perm_create" eval="False"/>
         </record>
 
+        <record id="rule_operators_sale_order_line" model="ir.rule">
+            <field name="name">Operator Sale Order Line</field>
+            <field ref="sale.model_sale_order_line" name="model_id"/>
+            <field name="domain_force">['|',('order_id.team_id','=',False),('order_id.team_id','in',user.crm_team_ids.ids)]</field>
+            <field name="groups" eval="[(4, ref('equipoDeVentas.group_operators'))]"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="False"/>
+        </record>
+
         <record id="rule_supervisor_crm_lead" model="ir.rule">
             <field name="name">Supervisor CRM Lead</field>
             <field ref="crm.model_crm_lead" name="model_id"/>
@@ -40,6 +51,17 @@
             <field name="name">Supervisor Sale Order</field>
             <field ref="sale.model_sale_order" name="model_id"/>
             <field name="domain_force">['|',('team_id','=',False),('team_id.user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4, ref('equipoDeVentas.group_supervisor'))]"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="True"/>
+        </record>
+
+        <record id="rule_supervisor_sale_order_line" model="ir.rule">
+            <field name="name">Supervisor Sale Order Line</field>
+            <field ref="sale.model_sale_order_line" name="model_id"/>
+            <field name="domain_force">['|',('order_id.team_id','=',False),('order_id.team_id.user_id','=',user.id)]</field>
             <field name="groups" eval="[(4, ref('equipoDeVentas.group_supervisor'))]"/>
             <field name="perm_unlink" eval="True"/>
             <field name="perm_write" eval="True"/>
