@@ -38,7 +38,7 @@ Una vez que hayas accedido a la aplicación, los siguientes pasos indican cómo 
 
 ### Paso 1: Instalar la Aplicación Ventas
 
-Dirígete al apartado de "Aplicaciones" y selecciona "Ventas" para instalarla.
+Dirígete al apartado de "Aplicaciones" y selecciona "Ventas" para instalarla. Si aparece para instalar el módulo "Tarifas Wizard" puedes ir directamente al Paso 4.
 
 ### Paso 2: Activar el modo desarollador
 
