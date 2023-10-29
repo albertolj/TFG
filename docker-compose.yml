@@ -3,7 +3,7 @@ version: '3'
 services:
   odoo:
     container_name: odoo_TFG_Produccion
-    image: "registry.ccit.es/odoo_15_ee"
+    image: odoo:15.0
     restart: unless-stopped
     ports:
       - "8300:8069"
