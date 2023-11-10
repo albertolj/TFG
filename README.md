@@ -10,7 +10,7 @@ Para llevar a cabo este proyecto, es imprescindible contar con Docker instalado.
 
 Primero, clona el repositorio del proyecto TFG desde GitHub:
 ``` bash
-git clone https://github.com/albertolj/TFG 
+git clone https://github.com/albertolj/TFG-Odoo 
 ```
 
 ### Paso 2: Iniciar Odoo con Docker
