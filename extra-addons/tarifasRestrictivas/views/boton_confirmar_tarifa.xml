@@ -7,15 +7,15 @@
     <field name="arch" type="xml">
       <xpath expr="//button[@name='action_confirm']" position="after">
         <button name="action_confirm" data-hotkey="v"
-                        string="Confirm" type="object"
+                        string="Confirmar" type="object"
                         groups="sales_team.group_sale_manager"
                         attrs="{'invisible': [('state', 'not in', ['waiting'])]}"/>
-        <button name="action_cancel" type="object" groups="sales_team.group_sale_manager" string="Cancel" attrs="{'invisible': ['|', ('state', 'not in', ['waiting']), ('id', '=', False)]}" data-hotkey="z"/>
+        <button name="action_cancel" type="object" groups="sales_team.group_sale_manager" string="Cancelar" attrs="{'invisible': ['|', ('state', 'not in', ['waiting']), ('id', '=', False)]}" data-hotkey="z"/>
         <button name="action_confirm" data-hotkey="v"
-                        string="Confirm" type="object"
+                        string="Confirmar" type="object"
                         groups="equipoDeVentas.group_supervisor"
                         attrs="{'invisible': [('state', 'not in', ['waiting'])]}"/>
-        <button name="action_cancel" type="object" groups="equipoDeVentas.group_supervisor" string="Cancel" attrs="{'invisible': ['|', ('state', 'not in', ['waiting']), ('id', '=', False)]}" data-hotkey="z"/>
+        <button name="action_cancel" type="object" groups="equipoDeVentas.group_supervisor" string="Cancelar" attrs="{'invisible': ['|', ('state', 'not in', ['waiting']), ('id', '=', False)]}" data-hotkey="z"/>
       </xpath>
     </field>
   </record>

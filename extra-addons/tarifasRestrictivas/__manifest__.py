@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Tarifas Wizard",
+    'name': "Tarifas Restrictivas",
 
     'description': """
         Cuando una persona que no sea el administrador intente vender un producto por debajo de la tarifa,
@@ -9,13 +9,10 @@
     """,
 
 
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
     'category': 'Uncategorized',
     'version': '0.1',
 
+    'license' : 'LGPL-3' ,
     # any module necessary for this one to work correctly
     'depends': ['base','sale', 'product','equipoDeVentas'],
 

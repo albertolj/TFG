@@ -11,8 +11,8 @@
                 </div>
                 <!--<field name="order_id"></field>-->
                 <footer>
-                    <button string="Confirm" name="action_confirm_tarifa" type="object" class="oe_highlight" data-hotkey="q"/>
-                    <button string="Cancel" class="btn btn-default" special="cancel" data-hotkey="z"/>
+                    <button string="Confirmar" name="action_confirm_tarifa" type="object" class="oe_highlight" data-hotkey="q"/>
+                    <button string="Cancelar" class="btn btn-default" special="cancel" data-hotkey="z"/>
                 </footer>
             </form>
         </field>

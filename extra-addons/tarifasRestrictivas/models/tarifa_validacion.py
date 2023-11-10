@@ -19,7 +19,7 @@ _logger = logging.getLogger(__name__)
 
 class tarifasExcepcion(models.Model):
     _inherit = 'sale.order'
-    state = fields.Selection(selection_add=[('waiting', 'Waiting')])
+    state = fields.Selection(selection_add=[('waiting', 'Pendiente de aprobación')])
     
         
     def action_confirm(self):
