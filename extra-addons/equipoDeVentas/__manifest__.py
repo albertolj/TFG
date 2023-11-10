@@ -3,15 +3,14 @@
     'name': "Equipo de Ventas",
 
     'description': """
-        Grupos de seguridad
+        En este módulo se han creado dos grupos de seguridad nuevos para las ventas, llamados "operadores" y "supervisores".
+        Estos grupos van vinculados a los equipos de ventas, siendo el supervisor el lider del equipo y los operadores los miembros del equipo.
+        Y se han modificado los permisos de los usuarios para que solo puedan las ventas y oportunidad de su equipo, mientras que el supervisor también puedas editarlas.
     """,
 
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '1',
 
+    'license': 'LGPL-3',
     # any module necessary for this one to work correctly
     'depends': ['base', 'sale_management', 'crm'],
 
@@ -23,10 +22,6 @@
         'views/ventas_form.xml',
         'views/crm_form.xml',
         'security/ir.model.access.csv'
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
     ],
 
     'application': True,
