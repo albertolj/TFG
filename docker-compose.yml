@@ -19,9 +19,8 @@ services:
       - PASSWORD=odoo
 
   postgres:
-    container_name: postgres
+    container_name: postgres_TFG_Produccion
     image: postgres:14.0
-
     restart: unless-stopped       
     environment:
       - POSTGRES_DB=postgres
