@@ -49,9 +49,9 @@ En el apartado de "Ajustes/Opciones generales/Herramientas de desarrollador", ac
 
 En "Aplicaciones" selecciona "Actualizar lista de aplicaciones" para agregar los módulos personalizados que se encuentran en la carpeta local "extra-addons".
 
-### Paso 4: Instalar el módulo "Tarifas Wizard"
+### Paso 4: Instalar el módulo "Tarifas restrictivas"
 
-A continuación, instala el módulo "Tarifas Wizard". Dicho módulo también va a instalar todos los módulos necesarios para que funcione correctamente. Los módulos que se van a instalar se encuentran especificados en el archivo "\__manifest\__.py".
+A continuación, instala el módulo "Tarifas restrictivas". Dicho módulo también va a instalar todos los módulos necesarios para que funcione correctamente. Los módulos que se van a instalar se encuentran especificados en el archivo "\__manifest\__.py".
 
 ### Paso 5: Instalar el módulo "Inventario"
 
